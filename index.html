@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <style>
+        /* Paleta de Cores Baseada no Campo */
+        :root {
+            --verde-escuro: #2E5A44; /* Florestas e plantações */
+            --verde-folha: #A3B899;  /* Brotos e folhas novas */
+            --terracota: #8B4513;    /* Terra fértil */
+            --areia: #F9F6F0;        /* Fundo limpo e suave */
+            --grafite: #2C3E50;      /* Texto legível */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--areia);
+            color: var(--grafite);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--verde-escuro);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-bottom: 5px solid var(--terracota);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.3rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--verde-escuro);
+            border-bottom: 2px solid var(--verde-folha);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* Estilização do Quiz */
+        .quiz-container {
+            background: #EDF2EE;
+            border-left: 5px solid var(--verde-escuro);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 1.5rem;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin: 0.5rem 0;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+            padding: 0.6rem;
+            background: white;
+            border-radius: 4px;
+            transition: 0.2s;
+            border: 1px solid #e0e0e0;
+        }
+
+        label:hover {
+            background: var(--verde-folha);
+            color: white;
+            border-color: var(--verde-folha);
+        }
+
+        button {
+            background-color: var(--terracota);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1.5rem;
+            width: 100%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--verde-escuro);
+        }
+
+        #resultado {
+            margin-top: 1.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--verde-escuro);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O Equilíbrio Essencial entre o Campo e a Cidade</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Dois Mundos, Uma Só Engrenagem</h2>
+            <p>O desenvolvimento do planeta caminha lado a lado com a sintonia entre os centros urbanos e as áreas rurais. A cidade funciona como o polo de inovação, consumo, pesquisa e criação de novas ferramentas digitais. O campo, por sua vez, é a base que sustenta as metrópoles, produzindo alimentos de qualidade, gerando biocombustíveis e preservando as reservas naturais e os recursos hídricos.</p>
+            <p>Esse ciclo de cooperação mútua garante que os avanços tecnológicos desenvolvidos na cidade (como inteligência artificial, sensores e monitoramento via satélite) cheguem ao trabalhador rural, permitindo produzir mais utilizando menos recursos.</p>
+        </section>
+
+        <section>
+            <h2>Práticas Sustentáveis no Campo</h2>
+            <p>Um modelo agrícola forte e moderno adota técnicas que conservam a biodiversidade. O uso de bioinsumos, sistemas de rotação de culturas e a captação de energia solar nas fazendas são exemplos práticos de como o campo evolui para abastecer as demandas urbanas sem comprometer o solo para as próximas gerações.</p>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Teste seu Conhecimento!</h2>
+            <p>Descubra o quanto você sabe sobre a relação sustentável entre o campo e a cidade.</p>
+            
+            <form id="quizForm">
+                <div class="question">1. De que forma a tecnologia urbana mais contribui diretamente para a sustentabilidade no campo?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q1" value="A"> Substituindo o solo natural por plataformas artificiais.</label></li>
+                    <li><label><input type="radio" name="q1" value="B"> Por meio da agricultura de precisão, que otimiza a irrigação e evita o desperdício de insumos.</label></li>
+                    <li><label><input type="radio" name="q1" value="C"> Pavimentando todas as áreas produtivas para facilitar o tráfego.</label></li>
+                </ul>
+
+                <div class="question">2. Qual é um dos principais benefícios que o campo sustentável oferece para quem vive nas grandes cidades?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q2" value="A"> O fornecimento constante de alimentos saudáveis e fontes de energia limpa (como o etanol).</label></li>
+                    <li><label><input type="radio" name="q2" value="B"> A transferência de toda a água rural para uso exclusivo das indústrias urbanas.</label></li>
+                    <li><label><input type="radio" name="q2" value="C"> A eliminação total das matas nativas para abrir espaço exclusivo de pastagem.</label></li>
+                </ul>
+
+                <div class="question">3. O que define o verdadeiro equilíbrio entre o campo e a cidade?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q3" value="A"> O isolamento total entre os dois setores para evitar interferências.</label></li>
+                    <li><label><input type="radio" name="q3" value="B"> A cooperação, onde a cidade apoia com ciência e consumo consciente, e o campo responde com produção responsável e preservação ambiental.</label></li>
+                    <li><label><input type="radio" name="q3" value="C"> A priorização do crescimento urbano em detrimento da produção de alimentos.</label></li>
+                </ul>
+
+                <button type="button" onclick="calcularResultado()">Enviar Respostas</button>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Aliança Campo & Cidade para um Amanhã Melhor</p>
+    </footer>
+
+    <script>
+        function calcularResultado() {
+            // Respostas Corretas
+            const gabarito = { q1: "B", q2: "A", q3: "B" };
+            let acertos = 0;
+            const form = document.getElementById('quizForm');
+            
+            const r1 = form.elements['q1'].value;
+            const r2 = form.elements['q2'].value;
+            const r3 = form.elements['q3'].value;
+
+            // Validação de preenchimento
+            if (!r1 || !r2 || !r3) {
+                const resultadoDiv = document.getElementById('resultado');
+                resultadoDiv.innerHTML = "⚠️ Responda todas as perguntas antes de enviar!";
+                resultadoDiv.style.color = "#8B4513";
+                return;
+            }
+
+            if (r1 === gabarito.q1) acertos++;
+            if (r2 === gabarito.q2) acertos++;
+            if (r3 === gabarito.q3) acertos++;
+
+            // Exibição da mensagem com base no resultado
+            let mensagemFinal = "";
+            if (acertos === 3) {
+                mensagemFinal = "🌱 Excelente! Você compreende perfeitamente a importância da união sustentável entre o campo e a cidade. (3/3 acertos)";
+            } else if (acertos === 2) {
+                mensagemFinal = "🌿 Muito bom! Você demonstra um ótimo entendimento sobre as práticas agroambientais modernas. (2/3 acertos)";
+            } else {
+                mensagemFinal = "🚜 Vale a pena reler o texto informativo! A integração inteligente entre o meio rural e urbano constrói o nosso futuro. (Acertou " + acertos + "/3)";
+            }
+
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.innerHTML = mensajeFinal;
+            resultadoDiv.style.color = "#2E5A44";
+        }
+    </script>
+</body>
+</html>
